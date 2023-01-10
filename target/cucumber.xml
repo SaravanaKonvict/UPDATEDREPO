@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="13" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="1.331">
+<testcase classname="Veriying Adactin Hotel Login Details" name="Verifying the Adactin Hotel Login Page with Valid Credentials" time="0.112">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC1_Login.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="Veriying Adactin Hotel Login Details" name="Verifying the Adactin Hotel Login Page with Valid Credentials using Enter Key" time="0.031">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN" with Enter Key....failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.loginWithEnter(Login.java:69)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLoginWithEnterKey(TC1_LoginStep.java:33)
+	at ✽.User should perform login "saravanakonvict","9C5STN" with Enter Key(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC1_Login.feature:15)
+]]></failure>
+</testcase>
+<testcase classname="Veriying Adactin Hotel Login Details" name="Verifying the Adactin Hotel Login Page with Invalid Credentials using Enter Key" time="0.01">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STNSDA"................failed
+Then User should verify the Invalid credentials error meesage containing "Invalid Login details or Your Password might have expired. Click here to reset your password".skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STNSDA"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC1_Login.feature:24)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Adactin Hotel site Search hotel feature" name="verifying the search hotel feature by giving input to all the fields" time="0.032">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And User should search the hotel by giving inputs to all the fields as per requirement "Sydney" , "Hotel Creek" , "Deluxe" , "4 - Four" , "14/12/2022" , "15/12/2022" , "4 - Four" and "0 - None".skipped
+Then User should verify the success message "select hotel"..................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC2_SearchHotel.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Adactin Hotel site Search hotel feature" name="verifying the search hotel feature by giving input to only the mandatory fields" time="0.045">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And User should search the hotel by giving inputs to only the mandatory fields as per requirement "Sydney" , "4 - Four" , "14/12/2022" , "15/12/2022" and "4 - Four".skipped
+Then User should verify the success message "select hotel"..................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC2_SearchHotel.feature:17)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Adactin Hotel site Search hotel feature" name="verifying the search hotel feature by giving input to all the fields with invalid checkout date" time="0.016">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And user should give input to check in date as any upcoming date, check out date should be the day before check in date and other fields as per the requirement "Sydney" , "Hotel Creek" , "Deluxe" , "4 - Four" , "24/12/2022" , "20/12/2022" , "4 - Four" and "0 - None".skipped
+Then User should verify the date selection error message "Check-In Date shall be before than Check-Out Date", "Check-Out Date shall be after than Check-In Date" to change the date.skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC2_SearchHotel.feature:28)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Adactin Hotel site Search hotel feature" name="verifying the search hotel feature by without giving any input to the fields" time="0.008">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And User should search the hotel by without giving any inputs to fields.....skipped
+Then User should verify the select location error message "Please Select a Location".skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC2_SearchHotel.feature:39)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Select Hotel feature in Adactin Hotel site" name="verifying the Select Hotel feature by giving input to all the fields" time="0.019">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And User should search the hotel by giving inputs to all the fields as per requirement "Sydney" , "Hotel Creek" , "Deluxe" , "4 - Four" , "14/12/2022" , "15/12/2022" , "4 - Four" and "0 - None".skipped
+Then User should verify the success message "select hotel"..................skipped
+And User should select a hotel from the available list and continue.........skipped
+Then User must verify the success message "Book A Hotel"....................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC3_SelectHotel.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Select Hotel feature in Adactin Hotel site" name="verifying the Select Hotel feature by without selecting a hotel" time="0.016">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And User should search the hotel by giving inputs to all the fields as per requirement "Sydney" , "Hotel Creek" , "Deluxe" , "4 - Four" , "14/12/2022" , "15/12/2022" , "4 - Four" and "0 - None".skipped
+Then User should verify the success message "select hotel"..................skipped
+And User should continue without selecting a hotel from the available list..skipped
+Then User should verify the error message "Please Select a Hotel"...........skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC3_SelectHotel.feature:19)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Adactin Hotel site Booking Confirmation feature" name="verifying the Booking confirmation feature by giving input to all the fields" time="0.039">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And User should search the hotel by giving inputs to all the fields as per requirement "Sydney" , "Hotel Creek" , "Deluxe" , "4 - Four" , "14/12/2022" , "15/12/2022" , "4 - Four" and "0 - None".skipped
+Then User should verify the success message "select hotel"..................skipped
+And User should select a hotel from the available list and continue.........skipped
+Then User should verify the success message "Book A Hotel"..................skipped
+And User should book the hotel by giving inputs to all the mandatory fields "Saravana" , "Kumar" and "Chennai".skipped
+Then User should verify the success message "Booking Confirmation" and save the Order No..skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC4_BookHotel.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Adactin Hotel site Booking Confirmation feature" name="verifying the Booking Confirmation feature without giving any inputs" time="0.009">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And User should search the hotel by giving inputs to all the fields as per requirement "Sydney" , "Hotel Creek" , "Deluxe" , "4 - Four" , "14/12/2022" , "15/12/2022" , "4 - Four" and "0 - None".skipped
+Then User should verify the success message "select hotel"..................skipped
+And User should select a hotel from the available list and continue.........skipped
+Then User should verify the success message "Book A Hotel"..................skipped
+And User should click book now..............................................skipped
+Then User should verify the following error messages "Please Enter your First Name" , "Please Enter you Last Name" , "Please Enter your Address" , "Please Enter your 16 Digit Credit Card Number" , "Please Select your Credit Card Type" , "Please Select your Credit Card Expiry Month" and "Please Enter your Credit Card CVV Number".skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC4_BookHotel.feature:26)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Adactin Hotel site Cancel Booking feature" name="verifying the Booked order Cancel feature" time="0.02">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And User should search the hotel by giving inputs to all the fields as per requirement "Sydney" , "Hotel Creek" , "Deluxe" , "4 - Four" , "14/12/2022" , "15/12/2022" , "4 - Four" and "0 - None".skipped
+Then User should verify the success message "select hotel"..................skipped
+And User should select a hotel from the available list and continue.........skipped
+Then User should verify the success message "Book A Hotel"..................skipped
+And User should book the hotel by giving inputs to all the mandatory fields "Saravana" , "Kumar" and "Chennai".skipped
+Then User should verify the success message "Booking Confirmation" and save the Order No..skipped
+And User should cancel the Generated order Id...............................skipped
+Then User need to verify the success message "The booking has been cancelled.".skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC5_CancelBooking.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="Verifying the Adactin Hotel site Cancel Booking feature" name="verifying the Existing order Cancel feature" time="0.007">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on the Adactin Page...........................................passed
+When User should perform login "saravanakonvict","9C5STN"...................failed
+Then User should verify after Login Success Message "Hello saravanakonvict!".skipped
+And User should cancel the required Existing order Id "T8FZVS1871"..........skipped
+Then User Should verify the success cancellation message "The booking has been cancelled.".skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.base.BaseClass.enterValues(BaseClass.java:121)
+	at com.pages.Login.normalLogin(Login.java:63)
+	at com.stepdefinition.TC1_LoginStep.userShouldPerformLogin(TC1_LoginStep.java:26)
+	at ✽.User should perform login "saravanakonvict","9C5STN"(file:///C:/Users/Konvict/eclipse-workspace-new/SampleHOOKS/src/test/resources/Features/TC5_CancelBooking.feature:28)
+]]></failure>
+</testcase>
+</testsuite>
